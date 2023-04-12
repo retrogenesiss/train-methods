@@ -1,0 +1,67 @@
+.clock{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #091921;
+}
+
+.clock-face {
+    width: 350px;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(https://antonaniskovich.ru/filearticle/chasy-na-javascript/file/clock.png),
+    url(https://antonaniskovich.ru/images/javascript/2020/2020-03-21-chasy-na-javascript/file/js.png),
+    radial-gradient(circle, rgb(37, 73, 90) 0%, rgb(25, 48, 60) 11%, rgba(9, 25, 33, 1) 38%);
+    background-size: cover;
+    border-radius: 50%;
+    box-shadow: 0 -15px 15px rgba(134, 134, 134, 0.35),
+    inset 0 -15px 15px #191919,
+    0 15px 15px rgba(134, 134, 134, 0.35),
+    inset 0 15px 15px #191919
+}
+
+.dot {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    z-index: 999;
+}
+
+.arrows{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    border-radius: 50%;
+}
+
+.hour-hand{
+    position: absolute;
+    width: 8px;
+    height: 80px;
+    background-color: #ffc600;
+    z-index: 10;
+    border-radius: 6px 6px 0 0;
+}
+
+.minute-hand{
+    position: absolute;
+    width: 4px;
+    height: 90px;
+    background-color: #fff;
+    z-index: 11;
+    border-radius: 6px 6px 0 0;
+}
+
+.second-hand{
+    position: absolute;
+    width: 2px;
+    height: 150px;
+    background-color: #fff;
+    z-index: 12;
+    border-radius: 6px 6px 0 0;
+}
